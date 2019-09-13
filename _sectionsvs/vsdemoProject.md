@@ -3,7 +3,8 @@ title: Demoprojekt
 icon: fa-lightbulb
 order: 5
 ---
-[Demoprojekt](/test/_sectionsvs/DemoProjekt.zip)
+<a href="DemoProjekt.zip" class="button">Demoprojekt</a>
+<br>
 Om du känner för att testa på utvecklingsmiljön så hittar du här ett lite mindre demoprojekt som du kan nyttja för att
 bli familjär med Visual Studio-miljön och testa på några utav uppgifterna som du hittar på webbplats.
 

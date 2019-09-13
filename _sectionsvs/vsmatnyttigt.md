@@ -1,7 +1,7 @@
 ---
 title: Matnyttigt i Visual Studio
 icon: fa-th
-order: 3
+order: 4
 ---
 Visual Studio (VS) erbjuder oerhört mycket funktionalitet, olika typer av fönster, möjligheten att testa sin kod i realtid och mycket mer. En nackdel med detta är dock att du med största sannolikhet aldrig kommer att behöva stora delar av det som erbjuds. Således behandlar denna sektion olika aspekter av VS som du sannolikt kommer att stöta på eller åtminstone kan dra nytta utav.
 

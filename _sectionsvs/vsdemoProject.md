@@ -3,7 +3,7 @@ title: Demoprojekt
 icon: fa-lightbulb
 order: 5
 ---
-<a href="DemoProjekt.zip" class="button" style="margin-top:0;margin-bottom:40px;color:#a6a6a6>Ladda ned</a>
+<a href="DemoProjekt.zip" class="button" style="margin-top:0;margin-bottom:40px;color:#a6a6a6">Ladda ned</a>
 <br>
 Om du känner för att testa på utvecklingsmiljön så hittar du här ett lite mindre demoprojekt som du kan nyttja för att
 bli familjär med Visual Studio-miljön och testa på några utav uppgifterna som du hittar på webbplats.

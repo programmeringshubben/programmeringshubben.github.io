@@ -17,7 +17,7 @@ Därefter dubbelklickar du på ikonen och hittar där mappen "Visual Studio" . D
 
 Det andra alternativet, att navigera hit via Visual Studio (om ett projekt är öppet), gör du genom att högerklicka på din "Solution"-fil i Solution Explorer (som du ser i högerspalten när du arbetar i VS). Nedan bild visar hur detta ser ut.
 
-<img src="{{ '/Images/image8.png' | relative_url }}" alt="Open Folder in File Explorer" i VS" class="image centered"/>
+<img src="{{ '/Images/image8.png' | relative_url }}" alt="Open Folder in File Explorer i VS" class="image centered"/>
 
 Oavsett tillvägagångssätt bemöts du då utav din projektmapp som ser ut något i stil med nedan.
 

@@ -1,7 +1,7 @@
 ---
 title: Mappar och filer
 icon: fa-th
-order: 2
+order: 3
 ---
 Under denna sektion hittar du information om exempelvis hur du kan navigera till projektmappen, vad du bör tänka på när du sparar dina filer och hur man "packar ihop" ett projekt på rätt sätt inför inlämningar.
 

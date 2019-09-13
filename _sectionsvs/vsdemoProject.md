@@ -1,7 +1,7 @@
 ---
 title: Demoprojekt
 icon: fa-lightbulb
-order: 4
+order: 5
 ---
 [Demoprojekt](/test/_sectionsvs/DemoProjekt.zip)
 Om du känner för att testa på utvecklingsmiljön så hittar du här ett lite mindre demoprojekt som du kan nyttja för att

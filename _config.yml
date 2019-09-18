@@ -41,6 +41,9 @@ email: anton.backe@im.uu.se
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
+# Google Analytics Tracking ID goes here:
+google_analytics: UA-146950027-1
+
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: chrisbobbe/jekyll-theme-prologue
 collections:

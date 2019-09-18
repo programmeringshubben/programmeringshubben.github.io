@@ -52,9 +52,9 @@ int.TryParse(input, out y);
 
 ## Uppgiftsförteckning ##
 
-Uppgift 1 | Att deklarera vs. att instansiera
+Uppgift 1 | Att deklarera vs. att tilldela
 ----------|-----------------------------------
-Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>string</code>, <code>char</code>, <code>bool</code>) och instansiera sedan resp. variabel genom att tilldela dem ett värde.
+Beskrivning | Deklarera en variabel av resp. datatyp (<code>int</code>, <code>string</code>, <code>char</code>, <code>bool</code>) och tilldela sedan resp. variabel genom att tilldela dem ett värde.
 
 ---
 
@@ -69,7 +69,7 @@ string s;
 char c;
 bool b;
 
-// Instansiering av variablerna. Vi tilldelar dem ett värde.
+// Tilldelning av variablerna. Vi ger dem ett värde.
 x = 10;
 s = "Hello world!";
 c = 'H';

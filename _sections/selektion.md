@@ -284,7 +284,7 @@ else{
     <tr>
       <td>Beskrivning</td>
       <td>
-Skriv ett program som läser in en persons ålder. Programmet ska sedan kategorisera arbetsföra personer efter deras ålderskategori och skriva ut vilken kategori som personen tillhör. Kategorierna är: <br><br>16-19: Tonåring <br> 20-29: Ung vuxen <br> 30-39: Vuxen <br> 40-49: Medelålder <br> 50-64: Äldre <br>Om personen är under 16 eller äldre än 64 så ska programmet skriva ut att personen inte tillhör arbetsför kategori. Exempel på interaktion med programmet:<br>
+Skriv ett program som läser in en persons ålder. Programmet ska sedan kategorisera arbetsföra personer efter deras ålderskategori och skriva ut vilken kategori som personen tillhör. Kategorierna är: <br>16-19: Tonåring <br> 20-29: Ung vuxen <br> 30-39: Vuxen <br> 40-49: Medelålder <br> 50-64: Äldre <br><br>Om personen är under 16 eller äldre än 64 så ska programmet skriva ut att personen inte tillhör arbetsför kategori. Exempel på interaktion med programmet:<br>
         <table class="examples">
           <thead>
             <tr>
@@ -375,7 +375,7 @@ Studenten har avslutat kursen med betyget G!
             </tr>
           </tbody>
         </table>
-      <br>**OBS!** Om något har gått tokigt till i systemet så behöver vi dock kunna avgöra detta. Ifall studentens skrivpoäng därför är negativa eller över 100 så ska programmet skriva ut "Något har gått fel vid inmatning.". <br><br> Vi behöver även kontrollera om studenten har fått bonuspoäng från andra moment på kursen och, om så är fallet, så behöver detta tas i beaktning vid bedömningen. Om en student exempelvis skriver 57 på tentamen men har sedan tidigare bonuspoäng som omfattar 6 poäng på tentamen så ska studenten ha betyget G.
+      <br><em>OBS!</em> Om något har gått tokigt till i systemet så behöver vi dock kunna avgöra detta. Ifall studentens skrivpoäng därför är negativa eller över 100 så ska programmet skriva ut "Något har gått fel vid inmatning.". <br><br> Vi behöver även kontrollera om studenten har fått bonuspoäng från andra moment på kursen och, om så är fallet, så behöver detta tas i beaktning vid bedömningen. Om en student exempelvis skriver 57 på tentamen men har sedan tidigare bonuspoäng som omfattar 6 poäng på tentamen så ska studenten ha betyget G.
       </td>
     </tr>
   </tbody>

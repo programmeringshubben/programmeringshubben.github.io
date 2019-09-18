@@ -467,7 +467,7 @@ Console.WriteLine("Name: " + lName + ", " + fName + ".");
     <tr>
       <td>Beskrivning</td>
       <td>
-Skriv ett program som läser in ett heltal och dividerar det med 2. Programmet ska sedan skriva ut "resten" (det som blev över efter divisionen). **TIPS:** Operatorn för Modulus är <code>%</code>. Anledningen till varför vi får 1 i ovan exempel beror på att 2 går i 5 två gånger (2+2=4) vilket lämnar oss med "resten" som är en 1:a. Exempel på interaktion med programmet: <br>
+Skriv ett program som läser in ett heltal och dividerar det med 2. Programmet ska sedan skriva ut "resten" (det som blev över efter divisionen). <em>TIPS:</em> Operatorn för Modulus är <code>%</code>. Anledningen till varför vi får 1 i ovan exempel beror på att 2 går i 5 två gånger (2+2=4) vilket lämnar oss med "resten" som är en 1:a. Exempel på interaktion med programmet: <br>
         <table class="examples">
   <thead>
     <tr>

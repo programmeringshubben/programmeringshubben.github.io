@@ -242,14 +242,13 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
   
 ```cs
 void NestedPrintTwo(){
-  for(int i = 1; i <= 5; i++)
+  for (int i = 0; i < 5; i++)
   {
-    for(int j = 1; j <= i; j++)
-    {  
-      Console.Write("*");
-    }
-    // Används för att "gå till nästa rad", dvs. en break-line.
-    Console.Write("\n"); // Går även att byta ut mot Console.WriteLine();
+      for (int j = 1; j <= 5 - i; j++)
+          Console.Write(" ");
+      for (int k = 1; k <= 2 * i - 1; k++)
+          Console.Write("*");
+      Console.WriteLine();
   }
 }
 ```

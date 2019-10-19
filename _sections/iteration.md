@@ -829,16 +829,20 @@ Beskrivning | Skriv en metod, <code>SecondHighestNumber</code>, som tar emot en 
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-int SecondHighestNumber(int[] input){
-  int max = 0, nMax = 0;
-  for(int i = 0; i < input.Length; i++){
-    if(input[i] < max)
+int SecondHighestNumber(int[] input)
+{
+    int max = input[0], nMax = 0;
+    for (int i = 1; i < input.Length; i++)
     {
-        nMax = max;
-        max = input[i];
-    }  
-  }
-  return nMax;
+        if (input[i] > max)
+        {
+            nMax = max;
+            max = input[i];
+        }
+        else if (input[i] > nMax && input[i] != max)
+            nMax = input[i];
+    }
+    return nMax;
 }
 ```
 </details>

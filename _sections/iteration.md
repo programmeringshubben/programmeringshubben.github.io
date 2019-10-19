@@ -218,7 +218,6 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
             <tr>
               <td>
                 <pre lang="csharp" class="highlight">
-// OBS! Du behöver inte inkl. mellanslag mellan symbolerna!
     *
    * * 
   * * *
@@ -241,15 +240,21 @@ Skriv en metod, <code>NestedPrintTwo</code>, som skriver ut följande mönster:<
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-void NestedPrintTwo(){
-  for (int i = 0; i < 5; i++)
-  {
-      for (int j = 1; j <= 5 - i; j++)
-          Console.Write(" ");
-      for (int k = 1; k <= 2 * i - 1; k++)
-          Console.Write("*");
-      Console.WriteLine();
-  }
+static void NestedPrintTwo()
+{
+    int count = 1;
+    for (int i = 5; i >= 1; i--)
+    {
+        for (int j = i - 1; j >= 1; j--)
+            Console.Write(" ");
+        for (int k = 1; k <= count; k++)
+        {
+            Console.Write("*");
+            Console.Write(" ");
+        }
+        count++;
+        Console.WriteLine();
+    }
 }
 ```
 </details>

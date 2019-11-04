@@ -571,7 +571,7 @@ Console.WriteLine(); // En extra blankrad
 if(a == b && a == c){
   Console.WriteLine("Triangeln är en liksidig triangel.");
 }
-else if(a == b || a == c){
+else if(a == b || a == c || b == c){
   Console.WriteLine("Triangeln är en likbent triangel.");
 }
 else{

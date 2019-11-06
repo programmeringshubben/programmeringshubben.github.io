@@ -14,7 +14,7 @@ Beskrivning | Skriv en metod, <code>SumArrays</code>, som tar emot två arrayer 
 
 Uppgift 2 | Prisberäkning för inträde (Enkel)
 ----------|----------
-Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset för inträde till ett nöjesfält baserat på gästernas ålder. Antalet gäster som tillhör gruppen bestäms utav användaren som skriver in <code>N</code> efter att samtliga gäster och deras resp. ålder har angivits. <br><br> Pristabellen som gäller är:<br><br> - Barn (3-12): 50 kr. <br> - Pensionär (65+): 75 kr. <br> Samtliga resterande åldersgrupper betalar alltid 110 kr. <br><br> Om gruppen består utav fler än 4 gäster så ges en rabatt på 20% på totalpriset. Metoden ska efter beräkning skriva ut antalet gäster i gruppen och den totala summan.
+Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset för inträde till ett nöjesfält baserat på gästernas ålder. Antalet gäster som tillhör gruppen bestäms utav användaren som skriver in <code>N</code>. Därefter hämtas samtliga av dessa gästers namn och deras resp. ålderin. <br> Pristabellen som gäller är:<br> - Barn (3-12): 50 kr. <br> - Pensionär (65+): 75 kr. <br> Samtliga resterande åldersgrupper betalar alltid 110 kr. <br> Om gruppen består utav fler än 4 gäster så ges en rabatt på 20% på totalpriset. Metoden ska efter beräkning skriva ut antalet gäster i gruppen och den totala summan.
 
 Uppgift 3 | BMI kalkylator (Enkel)
 ----------|----------

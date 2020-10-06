@@ -145,7 +145,7 @@ Beskrivning | Skriv en metod som adderar två udda tal. Om talen inte är udda s
 // Notera att metoden inte nödvändigtvis måste returerna något.
 // Det kan dock vara aktuellt om vi t.ex. vill nyttja resultatet i en annan metod.
 int SumOddNumbers(int x, int y){
-  if(x % 2 == 0 && y % 2 == 0)
+  if(x % 2 != 0 && y % 2 != 0)
     return x + y;
   else
   {

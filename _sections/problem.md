@@ -18,7 +18,7 @@ Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset 
 
 Uppgift 3 | BMI kalkylator (Enkel)
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \times 703 \end{equation}$$<br><br>och den imperiska formeln är: <br><br>$$\begin{equation}BMI = \frac{weight}{height \times height} \end{equation}$$
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br> BMI = (weight / height * height) * 703 <br><br>och den imperiska formeln är: <br><br>BMI = (weight / height * height)
 
 Uppgift 4 | Ordbyte (Enkel)
 ----------|----------
@@ -334,9 +334,3 @@ Beskrivning | I introduktionen till sektionen "Iteration/Arrayer" så beskrivs e
 Uppgift 30 | RemoveDuplicates (Svår)
 ----------|----------
 Beskrivning | Skriv en metod, <code>RemoveDuplicates</code>, som tar emot en array av heltal. Metoden ska sedan ta bort alla duplicerade värden i arrayen. Dvs. att givet exempelvis arrayen: [6, 6, 3, 3, 1, 9, 4] så ska en array med värdena [6, 3, 1, 9, 4] returneras.<br><br>Testa först att skriva en implementation som ersätter alla duplicerade värden med 0:or snarare än att ta bort elementet från arrayen (reducera dess storlek). När du har lyckats med en sådan implementation så kan du sedan ge dig på den mer avancerade versionen som även reducerar arrayens storlek. <br><br>**TIPS!** Du kan nyttja implementationen från Uppgift 24 (<code>IsDuplicate</code>) under sektionen "Iteration/Arrayer" samt en ytterligare stödmetod som reducerar storleken på arrayen genom att ta bort ett angivet heltal från arrayen. Tänk i detta fall då på att inte ta bort ***alla*** förekomster av heltalet (vi vill exempelvis behålla en utav 6:orna i ovan exempel).<br><br> **NOTERA** att datastrukturen <code>array</code> ska nyttjas, inte <code>ArrayList</code>, <code>List</code> eller liknande datastrukturer. Det kan ev. dock vara fördelaktigt att reflektera kring inbyggda metoder för dessa andra typer av datastrukturer såsom <code>Append</code>, <code>Add</code> och <code>Remove</code>.
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

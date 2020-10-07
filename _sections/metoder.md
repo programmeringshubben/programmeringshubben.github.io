@@ -80,13 +80,13 @@ Beskrivning | Skriv en lämplig metodsignatur och tillhörande returtyp för met
   
 ```cs
 // Det spelar ingen roll om vi nyttjar int eller double här.
-double CalculateSum(int x, double y, int z) { }
+static double CalculateSum(int x, double y, int z) { }
 
 bool IsLoggedIn(string usr, string psw) { }
 
 // Givet returtypen så måste vi returnera något, i detta fall blir det en tom DateTime.
 // Om konverteringen misslyckas så har vi en else-sats som skriver ut att ett fel har uppstått.
-DateTime ConvertToDate(int date) {
+static DateTime ConvertToDate(int date) {
   // Code goes here.
   else{
     Console.WriteLine("Error.");
@@ -95,7 +95,7 @@ DateTime ConvertToDate(int date) {
 }
 
 // void då vi enbart vill skriva ut innehållet i arrayen.
-void PrintArray(int[] arr){ }
+static void PrintArray(int[] arr){ }
 ```
 </details>
 
@@ -114,7 +114,7 @@ Beskrivning | Skriv en metod som jämför om två meningar är identiska. Metode
 ```cs
 // Notera att metoden inte nödvändigtvis måste returerna något.
 // Det kan dock vara aktuellt om vi t.ex. vill nyttja resultatet i en annan metod.
-bool KontrolleraRader(string a, string b){
+static bool KontrolleraRader(string a, string b){
   if(a == b)
   {
     Console.WriteLine("The strings match!");
@@ -144,7 +144,7 @@ Beskrivning | Skriv en metod som adderar två udda tal. Om talen inte är udda s
 ```cs
 // Notera att metoden inte nödvändigtvis måste returerna något.
 // Det kan dock vara aktuellt om vi t.ex. vill nyttja resultatet i en annan metod.
-int SumOddNumbers(int x, int y){
+static int SumOddNumbers(int x, int y){
   if(x % 2 != 0 && y % 2 != 0)
     return x + y;
   else
@@ -169,12 +169,12 @@ Beskrivning | Skriv en metod, <code>PrintUserInfo</code>, som tar emot två str�
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-void PrintUserInfo(string name, string number){
+static void PrintUserInfo(string name, string number){
   Console.WriteLine("Hello, " + name + "!");
   Console.WriteLine("Your number is: " + number);
 }
 
-void PrintUserInfo(string name, string number, int year){
+static void PrintUserInfo(string name, string number, int year){
   Console.WriteLine("Hello, " + name + "!");
   Console.WriteLine("Your number is: " + number);
   Console.WriteLine("You are " + (2019 - year));
@@ -197,14 +197,14 @@ Beskrivning | Skriv en metod som avgör om ett heltal är udda eller jämnt. Skr
 ```cs
 // Notera att metoden inte nödvändigtvis måste returerna något.
 // Det kan dock vara aktuellt om vi t.ex. vill nyttja resultatet i en annan metod.
-bool IsOdd(double x){
+static bool IsOdd(double x){
   if(x % 2 != 0)
     return true;
   else
     return false;
 }
 
-double DivideOddAndEvenNumbers(double x){
+static double DivideOddAndEvenNumbers(double x){
   // Notera att "IsOdd(x)" är samma sak som att skriva "IsOdd(x) == true".
   // Detta då det är placerat som ett villkor i if-satsen och metoden returnerar en bool.
   if(IsOdd(x)) 
@@ -219,7 +219,7 @@ double DivideOddAndEvenNumbers(double x){
 
 Uppgift 6 | En enkel meny II
 ----------|-------------------------------
-Beskrivning | Skriv en metod som presenterar användaren till en enklare meny med 3 alternativ. Dessa alternativ ska vara:<br><br> - Summera 3 heltal.<br> - Avgör om ett heltal är positivt eller negativt.<br> - Avgör först om 3 heltal är positiva eller negativa och sedan summera dem. Notera att enbart positiva heltal ska summeras med varandra och vice versa för negativa heltal.<br><br> Funktionaliteten ska placeras i lämpliga metoder. Med lämpligt så avses exempelvis att en metod inte bör utföra funktionaliteten för både det första och det andra menyalternativet. **OBS!** Ingen kod ska dupliceras, dvs. förekomma mer än en gång.
+Beskrivning | Skriv en metod som presenterar användaren till en enklare meny med 3 alternativ. Dessa alternativ ska vara:<br><br> - Summera 3 heltal.<br> - Avgör om ett heltal är positivt eller negativt.<br> - Avgör först om två heltal är positiva eller negativa. Om båda heltal är positiva; summera dem. Om båda heltal är negativa; multiplicera dem. Ifall heltalen inte matchar varandra, utför ingen beräkning och returnerna 0. <br><br> Funktionaliteten ska placeras i lämpliga metoder.
 
 ---
 
@@ -228,11 +228,11 @@ Beskrivning | Skriv en metod som presenterar användaren till en enklare meny me
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-void ASimpleMenu(){
+static void ASimpleMenu(){
   Console.WriteLine("Choose one of the following options:");
   Console.WriteLine("1. Sum 3 numbers.");
   Console.WriteLine("2. Check if a number is positive or negative.");
-  Console.WriteLine("3. Check if 3 numbers are positive or negative then sum them based on category.");
+  Console.WriteLine("3. Check if two numbers are both negative, if they are - sum them. If they're not - multiply them.");
   
   int.TryParse(Console.ReadLine(), out int input);
   switch(input){
@@ -245,14 +245,14 @@ void ASimpleMenu(){
         Console.WriteLine("The number is positive: " + IsPositive(num));
         break;
     case 3:
-        Console.WriteLine("The sum of PosNeg is: " + PosNegSum());
+        Console.WriteLine("The sum of PosNegSumOrMulti is: " + PosNegSumOrMulti());
         break;
     default:
         Console.WriteLine("Incorrect input.");
         break;
 }
 
-int SumNumbers(int x, int y, int z){
+static int SumNumbers(int x, int y, int z){
     Console.Write("Enter the first number: ");
     int.TryParse(Console.ReadLine(), out int x);
     Console.Write("Enter the second number: ");
@@ -263,28 +263,25 @@ int SumNumbers(int x, int y, int z){
     return x + y + z;
 }
 
-bool IsPositive(int n){   
+static bool IsPositive(int n){   
     if(n >= 0)
       return true;
     else
       return false;
 }
 
-int PosNegSum()
-{
-    Console.Write("Enter the positive number: ");
-    int.TryParse(Console.ReadLine(), out int pos);
+static int PosNegSumOrMulti(){
+    Console.Write("Enter the first number: ");
+    int.TryParse(Console.ReadLine(), out int input1);
+    Console.Write("Enter the second number: ");
+    int.TryParse(Console.ReadLine(), out int input2);
 
-    if (IsPositive(pos))
-    {
-        Console.Write("Enter the negative number: ");
-        int.TryParse(Console.ReadLine(), out int neg);
-
-        if (!IsPositive(neg))
-            return pos + neg;
-        else
-            return 0;
-    }
+    if (IsPositive(input1) && IsPositive(input2))
+        return input1 + input2;
+        
+    else if(!IsPositive(input1) && !IsPositive(input2))
+        return input1 * input2;
+        
     else
         return 0;
 }

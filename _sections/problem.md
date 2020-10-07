@@ -18,7 +18,7 @@ Beskrivning | Skriv en metod, <code>AdmissionPrice</code>, som beräknar priset 
 
 Uppgift 3 | BMI kalkylator (Enkel)
 ----------|----------
-Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br> BMI = (weight / height * height) * 703 <br><br>och den imperiska formeln är: <br><br>BMI = (weight / height * height)
+Beskrivning | Skriv en metod som beräknar BMI (body mass index) värdet för en person. Metoden ska läsa in personens längd och vikt och därefter nyttja en utav två formler för att utföra beräkningen. Vilken formel som ska nyttjas beror på om längd och vikt anges enligt metriska eller imperiska mått (dvs. exempelvis cm gentemot feet + inches). Den metriska formeln är:<br><br> BMI = (weight / (height * height)) * 703 <br><br>och den imperiska formeln är: <br><br>BMI = (weight / (height * height))
 
 Uppgift 4 | Ordbyte (Enkel)
 ----------|----------

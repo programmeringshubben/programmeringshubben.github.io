@@ -103,7 +103,7 @@ Beskrivning | Skriv en metod, <code>StringReversed</code>, som tar emot en strä
   
 ```cs
 void StringReversed (string input){
-  for(int i = 0; i < input.Length; i++)
+  for(int i = input.Length-1; i >=0; i--)
   {
       Console.Write(input[i]);
   }

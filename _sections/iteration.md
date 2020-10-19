@@ -514,8 +514,9 @@ Beskrivning | Skriv en metod, <code>CalculateFactorial</code>, som tar emot ett 
 ```cs
 void CalculateFactorial(int input){
   if(input > 0){
-    for(int i = 1; i < input; i++){
-      input *= i;
+    for (int i = input - 1; i >= 1; i--)
+    {
+       input *= i;
     }
     Console.WriteLine("Fakulteten är: " + input);
   }

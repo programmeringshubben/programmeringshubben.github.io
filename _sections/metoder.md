@@ -250,6 +250,7 @@ static void ASimpleMenu(){
     default:
         Console.WriteLine("Incorrect input.");
         break;
+   } 
 }
 
 static int SumNumbers(int x, int y, int z){

@@ -237,6 +237,12 @@ static void ASimpleMenu(){
   int.TryParse(Console.ReadLine(), out int input);
   switch(input){
     case 1:
+        Console.Write("Enter the first number: ");
+        int.TryParse(Console.ReadLine(), out int x);
+        Console.Write("Enter the second number: ");
+        int.TryParse(Console.ReadLine(), out int y);
+        Console.Write("Enter the third number: ");
+        int.TryParse(Console.ReadLine(), out int z);
         Console.WriteLine("The sum is: " + SumNumbers(x, y, z));
         break;
     case 2:
@@ -253,14 +259,7 @@ static void ASimpleMenu(){
    } 
 }
 
-static int SumNumbers(int x, int y, int z){
-    Console.Write("Enter the first number: ");
-    int.TryParse(Console.ReadLine(), out int x);
-    Console.Write("Enter the second number: ");
-    int.TryParse(Console.ReadLine(), out int y);
-    Console.Write("Enter the third number: ");
-    int.TryParse(Console.ReadLine(), out int z);
-            
+static int SumNumbers(int x, int y, int z){            
     return x + y + z;
 }
 

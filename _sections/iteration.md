@@ -809,7 +809,7 @@ Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array 
 int HighestNumber(int[] input){
   int max = 0;
   for(int i = 0; i < input.Length; i++){
-    if(input[i] < max)
+    if(input[i] > max)
       max = input[i];
   }
   return max;

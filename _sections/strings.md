@@ -277,7 +277,7 @@ string SubString(string input, int start, int stop)
 
 Uppgift 7 | Manuell IndexOf
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>IndexOfChar</code>, som tar emot en sträng, ett tecken samt ett heltal - som avser startposition för sökningen - och skrickar tillbaka indexpositionen som tecknet förekommer på i strängen. Om tecknet inte förekommer i strängen så ska -1 returneras. <br><br> **OBS!** Denna uppgift är tänkt att öka förståelsen för hur <code>IndexOf</code> fungerar genom att skriva en egen implementation av metoden. Uppgiften ska därför inte lösas mha. den inbyggda metoden <code>IndexOf</code>.
+Beskrivning | Skriv en metod, <code>IndexOfChar</code>, som tar emot en sträng, ett tecken samt ett heltal - som avser startposition för sökningen - och skickar tillbaka indexpositionen som tecknet förekommer på i strängen. Om tecknet inte förekommer i strängen så ska -1 returneras. <br><br> **OBS!** Denna uppgift är tänkt att öka förståelsen för hur <code>IndexOf</code> fungerar genom att skriva en egen implementation av metoden. Uppgiften ska därför inte lösas mha. den inbyggda metoden <code>IndexOf</code>.
 
 ---
 

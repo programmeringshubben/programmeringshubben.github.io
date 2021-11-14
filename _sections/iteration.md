@@ -1163,7 +1163,7 @@ dupe = IsDuplicate(new int[] {6, 3, 1, 8, 4, 3}, 1);
 <details><summary markdown="span">Lösningsförslag</summary>
   
 ```cs
-bool RemoveDuplicates(int[] arr, int n)
+bool IsDuplicate(int[] arr, int n)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)

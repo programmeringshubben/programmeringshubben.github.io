@@ -797,7 +797,7 @@ void PrettyPrintReversed(int[] input){
 
 Uppgift 17 | Största värdet i en array
 ----------|-------------------------------
-Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array av heltal som argument och returnerar det största värdet i arrayen.
+Beskrivning | Skriv en metod, <code>HighestNumber</code>, som tar emot en array av positiva heltal som argument och returnerar det största värdet i arrayen.
 
 ---
 
